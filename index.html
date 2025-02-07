@@ -26,32 +26,47 @@
         /* Box Styling */
         .box {
             width: 700px;  /* Adjust width */
-            height: 200px; /* Adjust height */
+            height: 250px; /* Adjust height */
             background-color: black; /* Box color */
             position: absolute; /* Allows movement */
             top: 50px; /* Adjust this value to move box up/down */
             left: 470px; /* Adjust this value to move box left/right */
             border-radius: 10px; /* Optional: Rounded edges */
             display: flex;
+            flex-direction: column; /* Stack the text vertically */
             justify-content: center;
             align-items: center;
+            padding: 20px;
         }
 
-        /* Text inside the box */
+        /* Text Styling */
         .box-text {
             color: white; /* Text color */
             font-size: 24px; /* Font size */
             text-align: center; /* Center the text */
             font-family: Arial, sans-serif; /* Font family */
-            margin-top: -90px; /* Move the text up inside the box (optional) */
+            margin-top: -10px; /* Move the first text up inside the box (optional) */
+        }
+
+        /* Second Text Styling */
+        .box-text-second {
+            color: white; /* Text color */
+            font-size: 20px; /* Font size */
+            text-align: center; /* Center the text */
+            font-family: Arial, sans-serif; /* Font family */
+            margin-top: 10px; /* Space between the texts */
         }
     </style>
 </head>
 <body>
 
+    <!-- Box with Two Texts Inside -->
     <div class="box">
         <div class="box-text">
             ---------------------------------------------------------------------------------------
+        </div>
+        <div class="box-text-second">
+            The official website of Dicepaw!
         </div>
     </div>
 
