@@ -8,18 +8,18 @@
     <link rel="icon" href="https://cdn.discordapp.com/attachments/1084139185004351509/1337171661660885115/BackgroundEraser_20250206_232150806.png?ex=67a679a7&is=67a52827&hm=93d85a3b0a20048b3e75867280a8ebaf9cbb9d3fd466e1b070e8929951f08850&" type="image/png">
 
     <style>
-        /* Body and background color */
         body {
             margin: 0;
             font-family: Arial, sans-serif;
             background-color: #450a0a;
+            color: white;
         }
 
-        /* Header container */
+        /* Header styles */
         .header {
-            background-color: #1f1f1f;  /* Dark background for the header */
+            background-color: #000000;
             color: white;
-            padding: 10px 50px;
+            padding: 15px 50px;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -27,15 +27,15 @@
             top: 0;
             left: 0;
             width: 100%;
-            z-index: 10;
+            z-index: 100;
+            box-shadow: 0px 4px 2px -2px gray;
         }
 
         .header h1 {
-            margin: 0;
             font-size: 24px;
+            margin: 0;
         }
 
-        /* Navigation buttons */
         .nav-links {
             display: flex;
             gap: 20px;
@@ -46,7 +46,7 @@
             text-decoration: none;
             font-size: 18px;
             padding: 10px;
-            border: 2px solid white;
+            border: 2px solid transparent;
             border-radius: 5px;
             transition: all 0.3s ease;
         }
@@ -56,35 +56,58 @@
             color: #450a0a;
         }
 
-        /* Contact info section */
+        /* Contact section */
         .contact {
-            background-color: #282828;
+            background-color: #0d0d0d;
             color: white;
             padding: 15px;
             position: fixed;
             top: 50px;
             right: 20px;
             border-radius: 5px;
+            text-align: right;
         }
 
         .contact a {
             color: #00afff;
             text-decoration: none;
+            font-weight: bold;
         }
 
         .contact a:hover {
             text-decoration: underline;
         }
 
-        /* Padding for the body content */
+        /* Content padding to avoid overlap */
         .content {
-            padding-top: 100px; /* To ensure content doesn't hide behind the header */
+            padding-top: 120px;
+        }
+
+        /* Style for the links and their container */
+        .content a {
+            display: block;
+            color: #00afff;
+            margin: 10px 0;
+            font-size: 18px;
+            text-decoration: none;
+        }
+
+        .content a:hover {
+            text-decoration: underline;
+        }
+
+        /* Container for the main content */
+        .main-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 150px; /* Adjust for header overlap */
         }
     </style>
 </head>
 <body>
 
-    <!-- Header with title and navigation buttons -->
+    <!-- Header section -->
     <div class="header">
         <h1>Official Dicepaw Website</h1>
         <div class="nav-links">
@@ -101,10 +124,12 @@
         <p><a href="mailto:dicepaw99@gmail.com">dicepaw99@gmail.com</a></p>
     </div>
 
-    <!-- Body content (add your page content here) -->
-    <div class="content">
-        <h2>Welcome to the Dicepaw Website!</h2>
-        <p>This is where you can learn more about our team and projects.</p>
+    <!-- Main Content -->
+    <div class="main-content">
+        <div class="content">
+            <h2>Welcome to the Dicepaw Website!</h2>
+            <p>We are a creative team that makes amazing projects. Stay tuned for more!</p>
+        </div>
     </div>
 
 </body>
