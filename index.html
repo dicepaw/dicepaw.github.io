@@ -6,153 +6,53 @@
     <title>Dicepaw Official</title>
 
     <link rel="icon" href="https://cdn.discordapp.com/attachments/1084139185004351509/1337171661660885115/BackgroundEraser_20250206_232150806.png?ex=67a679a7&is=67a52827&hm=93d85a3b0a20048b3e75867280a8ebaf9cbb9d3fd466e1b070e8929951f08850&" type="image/png">
-    
+
+    <meta property="og:title" content="Dicepaw Official">
+    <meta property="og:description" content="Dicepaw! A team where we create stuff! More you will find in the website or in our discord!">
+    <meta property="og:image" content="https://cdn.discordapp.com/attachments/1084139185004351509/1337171661660885115/BackgroundEraser_20250206_232150806.png?ex=67a679a7&is=67a52827&hm=93d85a3b0a20048b3e75867280a8ebaf9cbb9d3fd466e1b070e8929951f08850&">
+    <meta property="og:url" content="https://dicepaw.fpr.net">
+    <meta property="og:type" content="website">
+
     <style>
         body {
+            background-color: #450a0a;
             margin: 0;
-            padding: 0;
-            background-color: #450a0a; /* Background color */
-            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 250vh; /* Larger height to make room for adjustments */
         }
 
-        /* Header with website title and navigation */
-        .header {
-            background-color: #000; /* Black background for header */
-            color: white;
-            padding: 20px 40px;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            z-index: 100;
+        /* Box Styling */
+        .box {
+            width: 700px;  /* Adjust width */
+            height: 200px; /* Adjust height */
+            background-color: black; /* Box color */
+            position: absolute; /* Allows movement */
+            top: 50px; /* Adjust this value to move box up/down */
+            left: 470px; /* Adjust this value to move box left/right */
+            border-radius: 10px; /* Optional: Rounded edges */
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
             align-items: center;
         }
 
-        .header h1 {
-            font-size: 24px;
-            margin: 0;
-        }
-
-        /* Nav links */
-        .nav-links {
-            display: flex;
-            gap: 30px;
-        }
-
-        .nav-links a {
-            color: white;
-            text-decoration: none;
-            font-size: 18px;
-            padding: 10px;
-            border-radius: 5px;
-            border: 2px solid transparent;
-            transition: background-color 0.3s ease, color 0.3s ease;
-        }
-
-        .nav-links a:hover {
-            background-color: white;
-            color: #450a0a; /* Red color on hover */
-        }
-
-        /* Contact section (Fixed on the right) */
-        .contact {
-            background-color: #0d0d0d; /* Darker background */
-            color: white;
-            padding: 15px;
-            position: fixed;
-            top: 60px;
-            right: 20px;
-            border-radius: 5px;
-            text-align: right;
-            z-index: 100;
-        }
-
-        .contact p {
-            margin: 0;
-        }
-
-        .contact a {
-            color: #00afff;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        .contact a:hover {
-            text-decoration: underline;
-        }
-
-        /* Main content area (Padding added to avoid overlap with fixed header) */
-        .content {
-            padding-top: 100px;
-            padding-left: 50px;
-            padding-right: 50px;
-        }
-
-        /* Content Box Styling */
-        .content-box {
-            background-color: black;
-            border-radius: 10px;
-            padding: 40px;
-            width: 80%;
-            margin: 40px auto;
-        }
-
-        .content-box p {
-            color: white;
-            font-size: 20px;
-        }
-
-        /* Additional links or sections */
-        .additional-links {
-            margin-top: 20px;
-        }
-
-        .additional-links a {
-            display: block;
-            color: #00afff;
-            margin: 10px 0;
-            font-size: 18px;
-            text-decoration: none;
-        }
-
-        .additional-links a:hover {
-            text-decoration: underline;
+        /* Text inside the box */
+        .box-text {
+            color: white; /* Text color */
+            font-size: 24px; /* Font size */
+            text-align: center; /* Center the text */
+            font-family: Arial, sans-serif; /* Font family */
+            margin-top: -10px; /* Move the text up inside the box (optional) */
         }
     </style>
 </head>
 <body>
 
-    <!-- Header section -->
-    <div class="header">
-        <h1>Official Dicepaw Website</h1>
-        <div class="nav-links">
-            <a href="socials.html" target="_blank">Socials</a>
-            <a href="devs_discords.html" target="_blank">Dev's Discords</a>
-            <a href="about_us.html" target="_blank">About Us</a>
-        </div>
-    </div>
-
-    <!-- Contact section (Discord and Email) -->
-    <div class="contact">
-        <p>For Contact:</p>
-        <p><a href="https://discord.gg/UVUZ2sQP2k" target="_blank">Discord</a></p>
-        <p><a href="mailto:dicepaw99@gmail.com">dicepaw99@gmail.com</a></p>
-    </div>
-
-    <!-- Main content -->
-    <div class="content">
-        <!-- Content Box -->
-        <div class="content-box">
-            <p>Welcome to Dicepaw! We are a team creating amazing things. Explore more on our website or connect with us on Discord.</p>
-        </div>
-
-        <!-- Additional Links or sections (like Socials, Dev's Discords, About Us) -->
-        <div class="additional-links">
-            <a href="socials.html" target="_blank">Socials</a>
-            <a href="devs_discords.html" target="_blank">Dev's Discords</a>
-            <a href="about_us.html" target="_blank">About Us</a>
+    <!-- Box with Text Inside -->
+    <div class="box">
+        <div class="box-text">
+            ---------------------------------------------------------------------------------------
         </div>
     </div>
 
