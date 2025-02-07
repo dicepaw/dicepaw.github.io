@@ -14,46 +14,60 @@
     <meta property="og:type" content="website">
 
     <style>
+        /* Body Background */
         body {
             background-color: #450a0a;
             margin: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 250vh; /* Larger height to make room for adjustments */
+            font-family: Arial, sans-serif;
         }
 
-        /* Box Styling */
-        .box {
-            width: 700px;  /* Adjust width */
-            height: 200px; /* Adjust height */
-            background-color: black; /* Box color */
-            position: absolute; /* Allows movement */
-            top: 50px; /* Adjust this value to move box up/down */
-            left: 470px; /* Adjust this value to move box left/right */
-            border-radius: 10px; /* Optional: Rounded edges */
-            display: flex;
-            justify-content: center;
-            align-items: center;
+        /* Navigation Bar Styling */
+        .navbar {
+            background-color: black;
+            padding: 15px 0;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
         }
 
-        /* Text inside the box */
-        .box-text {
-            color: white; /* Text color */
-            font-size: 24px; /* Font size */
-            text-align: center; /* Center the text */
-            font-family: Arial, sans-serif; /* Font family */
-            margin-top: -120px; /* Move the text up inside the box (optional) */
+        /* Navigation Links */
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 20px;
+            padding: 10px;
+            transition: 0.3s;
+        }
+
+        /* Hover Effect */
+        .navbar a:hover {
+            color: red;
+        }
+
+        /* Space Below Navbar */
+        .content {
+            padding-top: 80px;
+            text-align: center;
         }
     </style>
 </head>
 <body>
 
-    <!-- Box with Text Inside -->
-    <div class="box">
-        <div class="box-text">
-            ---------------------------------------------------------------------------------------
-        </div>
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="socials.html">Socials</a>
+        <a href="devsocials.html">Dev Socials</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <!-- Page Content -->
+    <div class="content">
+        <h1 style="color: white;">Welcome to Dicepaw!</h1>
     </div>
 
 </body>
