@@ -33,8 +33,10 @@
             left: 470px; /* Adjust this value to move box left/right */
             border-radius: 10px; /* Optional: Rounded edges */
             display: flex;
-            justify-content: center;
+            flex-direction: column;  /* Stack items vertically */
+            justify-content: space-evenly; /* Space texts evenly */
             align-items: center;
+            padding: 10px; /* Add some padding inside the box */
         }
 
         /* Text inside the box */
@@ -43,16 +45,26 @@
             font-size: 24px; /* Font size */
             text-align: center; /* Center the text */
             font-family: Arial, sans-serif; /* Font family */
-            margin-top: -120px; /* Move the text up inside the box (optional) */
+        }
+
+        /* Additional Text */
+        .box-text-second {
+            color: white; /* Text color */
+            font-size: 18px; /* Font size smaller for the second text */
+            text-align: center; /* Center the text */
+            font-family: Arial, sans-serif; /* Font family */
         }
     </style>
 </head>
 <body>
 
-    <!-- Box with Text Inside -->
+    <!-- Box with two texts inside -->
     <div class="box">
         <div class="box-text">
             ---------------------------------------------------------------------------------------
+        </div>
+        <div class="box-text-second">
+            The official website of Dicepaw!
         </div>
     </div>
 
