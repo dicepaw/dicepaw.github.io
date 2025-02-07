@@ -20,27 +20,30 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 250vh;
+            height: 250vh; /* Larger height to make room for adjustments */
         }
 
+        /* Box Styling */
         .box {
             width: 700px;  /* Adjust width */
             height: 200px; /* Adjust height */
             background-color: black; /* Box color */
             position: absolute; /* Allows movement */
-            top: 50px; /* Move box down */
-            left: 470px; /* Move box right */
+            top: 50px; /* Adjust this value to move box up/down */
+            left: 470px; /* Adjust this value to move box left/right */
             border-radius: 10px; /* Optional: Rounded edges */
             display: flex;
             justify-content: center;
             align-items: center;
         }
 
+        /* Text inside the box */
         .box-text {
             color: white; /* Text color */
             font-size: 24px; /* Font size */
             text-align: center; /* Center the text */
             font-family: Arial, sans-serif; /* Font family */
+            margin-top: -20px; /* Move the text up inside the box (optional) */
         }
     </style>
 </head>
