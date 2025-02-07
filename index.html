@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dicepaw Official</title>
-
+    
     <link rel="icon" href="https://cdn.discordapp.com/attachments/1084139185004351509/1337171661660885115/BackgroundEraser_20250206_232150806.png?ex=67a679a7&is=67a52827&hm=93d85a3b0a20048b3e75867280a8ebaf9cbb9d3fd466e1b070e8929951f08850&" type="image/png">
 
     <style>
         body {
             margin: 0;
-            font-family: Arial, sans-serif;
             background-color: #450a0a;
             color: white;
+            font-family: Arial, sans-serif;
         }
 
         /* Header styles */
@@ -28,7 +28,6 @@
             left: 0;
             width: 100%;
             z-index: 100;
-            box-shadow: 0px 4px 2px -2px gray;
         }
 
         .header h1 {
@@ -80,7 +79,11 @@
 
         /* Content padding to avoid overlap */
         .content {
-            padding-top: 120px;
+            padding-top: 100px;
+        }
+
+        .content h2 {
+            margin-top: 150px;
         }
 
         /* Style for the links and their container */
@@ -96,13 +99,26 @@
             text-decoration: underline;
         }
 
-        /* Container for the main content */
-        .main-content {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin-top: 150px; /* Adjust for header overlap */
+        /* Main container */
+        .main-container {
+            margin-top: 150px;
         }
+
+        /* Box for content */
+        .content-box {
+            background-color: black;
+            border-radius: 10px;
+            padding: 20px;
+            width: 80%;
+            margin: 40px auto;
+        }
+
+        .content-box p {
+            margin: 0;
+            font-size: 20px;
+            color: white;
+        }
+
     </style>
 </head>
 <body>
@@ -125,10 +141,16 @@
     </div>
 
     <!-- Main Content -->
-    <div class="main-content">
+    <div class="main-container">
+        <div class="content-box">
+            <p>Welcome to the Dicepaw website! This is where you can find our amazing projects and more information about us.</p>
+        </div>
+
+        <!-- Additional Links or Content (for example) -->
         <div class="content">
-            <h2>Welcome to the Dicepaw Website!</h2>
-            <p>We are a creative team that makes amazing projects. Stay tuned for more!</p>
+            <a href="socials.html" target="_blank">Socials</a>
+            <a href="devs_discords.html" target="_blank">Dev's Discords</a>
+            <a href="about_us.html" target="_blank">About Us</a>
         </div>
     </div>
 
