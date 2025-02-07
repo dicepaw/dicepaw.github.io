@@ -4,30 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dicepaw Official</title>
-    
-    <link rel="icon" href="https://cdn.discordapp.com/attachments/1084139185004351509/1337171661660885115/BackgroundEraser_20250206_232150806.png?ex=67a679a7&is=67a52827&hm=93d85a3b0a20048b3e75867280a8ebaf9cbb9d3fd466e1b070e8929951f08850&" type="image/png">
 
+    <link rel="icon" href="https://cdn.discordapp.com/attachments/1084139185004351509/1337171661660885115/BackgroundEraser_20250206_232150806.png?ex=67a679a7&is=67a52827&hm=93d85a3b0a20048b3e75867280a8ebaf9cbb9d3fd466e1b070e8929951f08850&" type="image/png">
+    
     <style>
         body {
             margin: 0;
-            background-color: #450a0a;
-            color: white;
+            padding: 0;
+            background-color: #450a0a; /* Background color */
             font-family: Arial, sans-serif;
         }
 
-        /* Header styles */
+        /* Header with website title and navigation */
         .header {
-            background-color: #000000;
+            background-color: #000; /* Black background for header */
             color: white;
-            padding: 15px 50px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+            padding: 20px 40px;
             position: fixed;
             top: 0;
             left: 0;
             width: 100%;
             z-index: 100;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
 
         .header h1 {
@@ -35,9 +35,10 @@
             margin: 0;
         }
 
+        /* Nav links */
         .nav-links {
             display: flex;
-            gap: 20px;
+            gap: 30px;
         }
 
         .nav-links a {
@@ -45,26 +46,31 @@
             text-decoration: none;
             font-size: 18px;
             padding: 10px;
-            border: 2px solid transparent;
             border-radius: 5px;
-            transition: all 0.3s ease;
+            border: 2px solid transparent;
+            transition: background-color 0.3s ease, color 0.3s ease;
         }
 
         .nav-links a:hover {
             background-color: white;
-            color: #450a0a;
+            color: #450a0a; /* Red color on hover */
         }
 
-        /* Contact section */
+        /* Contact section (Fixed on the right) */
         .contact {
-            background-color: #0d0d0d;
+            background-color: #0d0d0d; /* Darker background */
             color: white;
             padding: 15px;
             position: fixed;
-            top: 50px;
+            top: 60px;
             right: 20px;
             border-radius: 5px;
             text-align: right;
+            z-index: 100;
+        }
+
+        .contact p {
+            margin: 0;
         }
 
         .contact a {
@@ -77,17 +83,33 @@
             text-decoration: underline;
         }
 
-        /* Content padding to avoid overlap */
+        /* Main content area (Padding added to avoid overlap with fixed header) */
         .content {
             padding-top: 100px;
+            padding-left: 50px;
+            padding-right: 50px;
         }
 
-        .content h2 {
-            margin-top: 150px;
+        /* Content Box Styling */
+        .content-box {
+            background-color: black;
+            border-radius: 10px;
+            padding: 40px;
+            width: 80%;
+            margin: 40px auto;
         }
 
-        /* Style for the links and their container */
-        .content a {
+        .content-box p {
+            color: white;
+            font-size: 20px;
+        }
+
+        /* Additional links or sections */
+        .additional-links {
+            margin-top: 20px;
+        }
+
+        .additional-links a {
             display: block;
             color: #00afff;
             margin: 10px 0;
@@ -95,30 +117,9 @@
             text-decoration: none;
         }
 
-        .content a:hover {
+        .additional-links a:hover {
             text-decoration: underline;
         }
-
-        /* Main container */
-        .main-container {
-            margin-top: 150px;
-        }
-
-        /* Box for content */
-        .content-box {
-            background-color: black;
-            border-radius: 10px;
-            padding: 20px;
-            width: 80%;
-            margin: 40px auto;
-        }
-
-        .content-box p {
-            margin: 0;
-            font-size: 20px;
-            color: white;
-        }
-
     </style>
 </head>
 <body>
@@ -133,21 +134,22 @@
         </div>
     </div>
 
-    <!-- For Contact Section -->
+    <!-- Contact section (Discord and Email) -->
     <div class="contact">
         <p>For Contact:</p>
         <p><a href="https://discord.gg/UVUZ2sQP2k" target="_blank">Discord</a></p>
         <p><a href="mailto:dicepaw99@gmail.com">dicepaw99@gmail.com</a></p>
     </div>
 
-    <!-- Main Content -->
-    <div class="main-container">
+    <!-- Main content -->
+    <div class="content">
+        <!-- Content Box -->
         <div class="content-box">
-            <p>Welcome to the Dicepaw website! This is where you can find our amazing projects and more information about us.</p>
+            <p>Welcome to Dicepaw! We are a team creating amazing things. Explore more on our website or connect with us on Discord.</p>
         </div>
 
-        <!-- Additional Links or Content (for example) -->
-        <div class="content">
+        <!-- Additional Links or sections (like Socials, Dev's Discords, About Us) -->
+        <div class="additional-links">
             <a href="socials.html" target="_blank">Socials</a>
             <a href="devs_discords.html" target="_blank">Dev's Discords</a>
             <a href="about_us.html" target="_blank">About Us</a>
