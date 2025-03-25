@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Official Dicepaw Website</title>
+    <style>
+        body {
+            background-color: #8B0000; /* Dark red (blood-like) */
+            color: white;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+        .navbar {
+            background-color: black;
+            width: 60%; /* Shortened width */
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 20px auto; /* Centering */
+            border-radius: 10px;
+        }
+        .navbar h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        .sub-navbar {
+            background-color: black;
+            width: 80%; /* Wider than the first navbar */
+            height: 40px; /* Shorter height */
+            margin: 10px auto; /* Centered */
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between; /* Push items apart */
+            padding: 0 20px; /* Add padding on sides */
+        }
+        .sub-navbar .left-links {
+            display: flex;
+            gap: 48px; /* 3cm of space between buttons */
+        }
+        .sub-navbar a {
+            color: white;
+            text-decoration: none;
+            font-size: 22px; /* Make the text bigger */
+            font-weight: bold;
+        }
+        .sub-navbar a:hover {
+            text-decoration: underline;
+        }
+        .discord-link {
+            color: #7289DA !important; /* Discord blue */
+            margin-left: 10px; /* Reduced space between the separator and Discord */
+        }
+        .separator {
+            border-left: 2px solid white; /* White line separating the buttons */
+            height: 25px;
+            margin-right: -850px; /* Reduced space on the right of the separator */
+        }
+        .info-section {
+            margin-top: 1cm; /* Reduced space to 1cm */
+            padding: 20px;
+            background-color: black;
+            border-radius: 10px;
+            width: 80%; /* Same width as the navbars */
+            margin-left: auto;
+            margin-right: auto;
+            text-align: left;
+        }
+        .info-section h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .info-section p {
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <h1>Official Dicepaw Website</h1>
+    </div>
+    <div class="sub-navbar">
+        <div class="left-links">
+            <a href="info.html">Info</a>
+            <a href="socials.html">Socials</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+        <div class="separator"></div> <!-- Vertical separator line -->
+        <a href="https://discord.gg/" class="discord-link">Discord</a>
+    </div>
+
+    <!-- New Info Section Below Navbar -->
+    <div class="info-section">
+        <h2>Welcome to the Dicepaw Web!</h2>
+        <p>Here are some facts!</p>
+        <p><strong>Did you know that Dicepaw was being developed around the end of 2024 and published in 2025?</strong></p>
+        <p><strong>Did you know that Dicepaw was originally going to be for pirating stuff and others?</strong></p>
+        <p><strong>Fun Fact:</strong> If you're on Windows and you delete System32, you will get better performance and your device will feel faster no matter if you're in a game! (Just kidding, don't do it, this will delete your operating system!)</p>
+    </div>
+
+</body>
+</html>
