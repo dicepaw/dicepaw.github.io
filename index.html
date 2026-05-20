@@ -7,19 +7,19 @@
 
 <meta name="description" content="Dicepaw is a small creative project where three people make random, fun stuff. Join the Discord for updates." />
 
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
+<!-- CAMERA FONT FIX -->
 <style>
 @font-face {
   font-family: "Camera Plain Variable";
   src: url("CameraPlainVariable.woff2") format("woff2");
   font-weight: 100 900;
   font-style: normal;
+  font-display: swap;
 }
 
-/* apply it globally */
-body {
-  font-family: "Camera Plain Variable", sans-serif;
+/* FORCE FONT ACROSS ENTIRE SITE */
+html, body {
+  font-family: "Camera Plain Variable", system-ui, sans-serif !important;
 }
 </style>
 
@@ -37,6 +37,7 @@ body {
         <span class="logo-text">DICEPAW</span>
         <span class="logo-star">*</span>
       </a>
+
       <div class="nav-links desktop">
         <a href="#info" class="nav-link">Info</a>
         <a href="#socials" class="nav-link">Socials</a>
@@ -44,8 +45,10 @@ body {
         <span class="nav-sep" aria-hidden="true"></span>
         <a href="https://discord.gg/HFhJxeEAqh" target="_blank" rel="noreferrer" class="nav-link discord">Discord</a>
       </div>
+
       <button id="menuBtn" class="menu-btn" aria-label="Toggle menu">≡</button>
     </nav>
+
     <div id="mobileMenu" class="mobile-menu">
       <a href="#info">Info</a>
       <a href="#socials">Socials</a>
@@ -57,6 +60,9 @@ body {
 
   <main class="main">
     <span class="badge">Est. 2023 — Live since 2026</span>
+
+    <img src="dicepaw-logo.png" alt="Dicepaw graffiti logo" class="hero-logo" />
+
     <h1 class="title drip-shadow">
       Welcome to the <span class="title-graffiti">Dicepaw</span> Web!
     </h1>
@@ -74,11 +80,12 @@ body {
         <span class="section-title">Fun Facts</span>
         <span class="section-rule"></span>
       </div>
+
       <ul class="facts">
         <li><span class="num">01</span><span>Dicepaw started development in 2023 and launched in 2025.</span></li>
         <li><span class="num">02</span><span>It originally had a different, more experimental direction.</span></li>
         <li><span class="num">03</span><span>Dicepaw was originally going to be for piracy back in 2024!</span></li>
-        <li><span class="num">04</span><span>If you're on Windows. If you're on Linux: open terminal and type <code>rm -rf / </code>. (Of course it's a joke.)</span></li>
+        <li><span class="num">04</span><span>If you're on Windows. If you're on Linux: open terminal and type <code>rm -rf /</code>. (Of course it's a joke.)</span></li>
       </ul>
     </section>
 
@@ -88,6 +95,7 @@ body {
         <p class="card-text">We mostly hang out on Discord — that's where everything happens.</p>
         <a href="https://discord.gg/HFhJxeEAqh" target="_blank" rel="noreferrer" class="discord-link">discord.gg/HFhJxeEAqh ↗</a>
       </div>
+
       <div id="contact" class="spray-card small">
         <h2 class="card-title">Contact Us</h2>
         <p class="card-text">Got an idea, a bug, or just want to say hi? Ping us in Discord Server.</p>
@@ -97,7 +105,7 @@ body {
 
     <footer class="footer">
       <span class="footer-graffiti">dicepaw</span>
-      © <span id="year"></span> — made by a 1 human rolling dice.
+      © <span id="year"></span> — made by 1 human rolling dice.
     </footer>
   </main>
 </div>
